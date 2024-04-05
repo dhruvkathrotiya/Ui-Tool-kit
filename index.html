@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Tool Box</title>
+  <link rel="icon" type="image/x-icon" href="android-chrome-192x192 (1).png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-heading">Component Heading</div>
+      <div class="drag-item" data-type="text">Name</div>
+      <div class="drag-item" data-type="text">Email</div>
+      <div class="drag-item" data-type="text">Address</div>
+      <div class="drag-item" data-type="radio">Gender</div>
+      <div class="drag-item" data-type="checkbox">Agree to Terms</div>
+      <div class="drag-item" data-type="paragraph">Additional Information</div>
+      <div class="drag-item" data-type="text">Emergency Contact</div>
+      <div class="drag-item" data-type="bold">Bold Text</div>
+      <div class="drag-item" data-type="italic">Italic Text</div>
+      <div class="drag-item" data-type="horizontal-line">Horizontal Line</div>
+      <div class="drag-item" data-type="image">Image</div> <!-- Added image component -->
+    </div>
+
+    <div class="ui-container">
+      <div class="main-heading">Main Box</div>
+      <div class="block-kit-container" id="block-kit-container"></div>
+      <button class="preview-button" onclick="previewContent()">Preview</button>
+      <div class="preview" id="preview">
+        <div class="section-heading">Preview</div>
+        <div class="preview-content" id="preview-content"></div>
+      </div>
+
+    </div>
+
+    <div class="source-code">
+      <div class="section-heading">Code Section</div>
+      <pre id="slack-json"></pre>
+      <button class="preview-button" onclick="convertJsonToHtml()">Convert JSON to HTML</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+
+</body>
+
+</html>
